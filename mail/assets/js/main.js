@@ -10,7 +10,7 @@ let iscritti = [
 
 btn.addEventListener("click", function() {
     let mail = document.querySelector('#btn').value;
-})
+
 for (let i = 0; i < iscritti.length; i++) {
     console.log(iscritti[i])
     if (iscritti[i] == mail) {
@@ -22,7 +22,7 @@ for (let i = 0; i < iscritti.length; i++) {
 
  }    
  
-
+})
 
 
 
