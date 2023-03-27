@@ -9,20 +9,24 @@ let iscritti = [
 ]
 
 btn.addEventListener("click", function() {
-    let mail = document.querySelector('#btn').value;
+    let mail = document.querySelector('#controllo').value;
+    let soldatino = false
 
-for (let i = 0; i < iscritti.length; i++) {
-    console.log(iscritti[i])
-    if (iscritti[i] == mail) {
-     document.querySelector('#convalida').innerHTML = 'Email convalidata';
+    for (let i = 0; i < iscritti.length; i++) {
+        console.log(iscritti[i])
+
+        if (iscritti[i] == mail) { 
+            soldatino = true 
+        } 
+
+    }
+    if (soldatino == true) {
+        document.querySelector('#convalida').innerHTML = 'Email convalidata';
     } else {
-        document.querySelector('#convalida').innerHTML = 'Email non valida';
-    
-}
-
- }    
+        document.querySelector('#convalida').innerHTML = 'Email non valida';    
+    }    
  
-})
+});
 
 
 

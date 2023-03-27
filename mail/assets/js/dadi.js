@@ -3,9 +3,7 @@
 //stampo in pagina
 
 
-
-
-
+bottone.addEventListener('click',function () { 
 
 
 const winner = document.getElementById("winner");
@@ -16,13 +14,13 @@ const giocatore = Math.floor(Math.random()* max + 1)
 const CPU = Math.floor(Math.random()* max + 1)
 
 if(giocatore === CPU){
-    winner.innerText= ("Mi dispiace! è un pareggio!")
+    winner.innerHTML= ("<h2 class='black'>MI DISPIACE! HAI PAREGGIATO</h2>")
 }else if (giocatore > CPU){
-    winner.innerText= ("<h1 class="black">HAI VINTO!</h1>")
+    winner.innerHTML= ("<h1 class='black'>HAI VINTO!</h1>")
 }else if (giocatore < CPU){
-    winner.innerText= ("HAI PERSO!")
+    winner.innerHTML= ("<h1 class='red'>HAI PERSO!</h1>")
 
 }
+});
 
-
-console.log(player, CPU);
+ console.log(giocatore, CPU);
