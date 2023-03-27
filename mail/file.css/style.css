@@ -1,0 +1,35 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container {
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+}
+input {
+    border-radius: 10px;
+    border: 2px solid lightgreen;
+}
+.btn {
+    margin-top: 10px;
+}
+
+.waild {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 60px;
+    background-color: lightgreen;
+    width: 50%;
+
+}
+.black {
+    color: black;
+}
